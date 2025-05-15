@@ -40,16 +40,28 @@ body {
   color: var(--clr-neutral-very-dark-blue);
 }
 
+.wrapper {
+  max-width: 69rem;
+  margin-inline: 1rem;
+}
+
+/*padding: 0 1.9rem*/
+
 .flex-container {
-  max-width: 69;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (min-width: 60rem) {
+  .flex-conatiner {
+    flex-direction: row;
+  }
+}
+.Sup-card {
+  border-top: 5px solid hsl(212, 6%, 44%);
 }
 heading,
-list {
-  padding: 0 1.9rem;
-}
-heading {
-  padding-top: 4rem;
-}
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -85,4 +97,8 @@ h3 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.card-grid__img {
+  width: min(100%, 2.8rem);
+  align-self: flex-end;
 }

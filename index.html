@@ -22,14 +22,22 @@
     <title>Frontend Mentor | Four card feature section</title>
   </head>
   <body>
-    <h1>Reliable, efficient delivery Powered by Technology</h1>
+    
+      <div class="wrapper">
+        <div class="heading">
+          <h1>
+            Reliable, efficient delivery
+            <strong>Powered by Technology</strong>
+          </h1>
           <p>
             Our Artificial Intelligence powered tools use millions of project
             data points to ensure that your project is successful
           </p>
         </div>
-        <div class="list">
-          <div class="Suptab">
+      <main>
+        <!--Supervisor Section-->
+        <div class="flex-container">
+          <div class="Sup-card">
             <h2>Supervisor</h2>
             <p>Monitors activity to identify project roadblocks</p>
             <img
@@ -37,8 +45,10 @@
               alt=""
               class="card-grid__img"
             />
+            </div>
           </div>
-          <div class="team">
+        <!--TeamBuilder Section-->
+          <div class="team-card">
             <h2>Team Builder</h2>
             <p>
               Scans our talent network to create the optimal team for your
@@ -50,12 +60,14 @@
               class="card-grid__img"
             />
           </div>
-          <div class="karma">
+        <!--Karma Section-->
+          <div class="karma-card">
             <h2>Karma</h2>
             <p>Regularly evaluates our talent to ensure quality</p>
             <img src="images/icon-karma.svg" alt="" class="card-grid__img" />
-          </div>
-          <div class="cal">
+          </div> 
+        <!--Calculator Section-->
+          <div class="cal-card">
             <h2>Calculator</h2>
             <p>
               Uses data from past projects to provide better delivery estimates
@@ -69,7 +81,7 @@
         </div>
       </div>
     </main>
-
+ 
     <footer>
       <p class="attribution">
         Challenge by
@@ -78,5 +90,6 @@
         >. Coded by <a href="#">C'Era Sneed</a>.
       </p>
     </footer>
-  </body>
+ </body>
 </html>
+
